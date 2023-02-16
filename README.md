@@ -1,2 +1,2 @@
-# almacenamientohtml5
+# AlmacenamientoHTML5
 En este repo estaremos trabajando el uso del alamcenamiento web con html
