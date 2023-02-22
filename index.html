@@ -10,23 +10,59 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script src="audios.js"></script>
+        <script src="PodcastPlayer.js"></script>
+        <script src="player.js"></script>
     </head>
     <body>
-        <section id="reproductor">
-            <audio id="miaudio">
-                <source src="audio/moonlight.mp3">
-            </audio>
-            <nav>
-                <div id="botones">
-                    <button type="button" id="play"></button> 
+        <section id="podcastPlayer">
+            <div class="container">
+                <div class="header">
+                    <div class="title"></div>
+                    <div class="description"></div>
                 </div>
-                <div id="barra">
-                    <div id="progreso"></div>
+                <div id="player">
+                   <div>
+                       <button class="playPauseButton">Play</button>
+                       <button class="closeButton">Stop</button>
+                   </div>
+                   <div>
+                       <progress class="progressBar" value="0" max="1"></progress>
+                   </div>
+                   <div>
+                       <span class="currentTime">00:00</span>
+                   </div>
+                   <div>
+                       <label>Volume</label>
+                       <input class="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
+                   </div>
+                   <div>
+                    <label for="playbackSpeed">Playback speed:</label>
+                    <select name="playbackSpeed" class="playbackSpeed">
+                      <option value="0.5">0.5x</option>
+                      <option value="0.75">0.75x</option>
+                      <option value="1">1x</option>
+                      <option value="1.25">1.25x</option>
+                      <option value="1.5">1.5x</option>
+                      <option value="2">2x</option>
+                    </select>
+                   </div>
                 </div>
-            </nav>
-        
+            </div>
         </section>
-        <div></div>
+        <div>
+            <!-- Demo podcast -->
+            <div>
+                <h2>Podcast 1</h2>
+                <p>
+                    <a href="#" onclick="playPodcast('Podcast 1', 'Description', 'audio/moonlight.mp3');">Play</a>
+                </p>
+            </div>
+            <div>
+                <h2>Podcast 2</h2>
+                <p>
+                    <a href="#" onclick="playPodcast('Podcast 2', 'Description', 'audio/moonlight.mp3');">Play</a>
+                </p>
+            </div>
+        </div>
     </body>
 </html>
