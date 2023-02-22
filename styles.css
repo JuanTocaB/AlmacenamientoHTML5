@@ -1,44 +1,164 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : May 9, 2020, 12:55:06 PM
-    Author     : ljavier
-*/
-@charset "utf-8";
-#play{
-    width:50px;
-    margin:20px auto;
-    background: #FC3;
-    padding: 5px;
-    border:2px solid #F60;  
+
+/* Si no hay punto es que solo hay una referencia posible*/
+/* Cuerpo de la pagina */
+body 
+{
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-nav{
- margin: 10px 0;   
-    
+/* Los puntos para las clases*/
+/* Caja que contiene el reproductor */
+.container 
+{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-#botones{
-    float: left;
-    width:200px;
-    height:200px;
+
+/* Espacio entre el titulo y la barra de progreso */
+.header 
+{
+    margin-bottom: 20px;
 }
-#barra{
-    background:#FFF;
-    width:400px;
-    height: 16px;
-    border: 1px solid #666;
-    padding: 3px;
-    margin-left:100px;
-    
+
+/* Titulos de los Audios */
+.title 
+{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-#progreso{
-   position:absolute;
-   width: 0px;
-   height: 16px;
-   background: rgba(0,0,150,2);
-    
+
+.description 
+{
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
 }
+
+/* El hastag es para los ID */
+#player 
+{
+    margin-bottom: 20px;
+}
+
+/* Botones de Play, Pausa (Son el mismo) y Stop */
+
+.playPauseButton,
+.stopButton {
+    background-color: #428bca;
+    color: #fff;
+    /* Borde que rodea los botones, puntos, lineas etc... */
+    border: none;
+    /* Redondez de los botones */
+    border-radius: 5px;
+    font-size: 16px;
+    /* Relleno altura, anchura*/
+    padding: 10px 20px;
+    margin-right: 10px;
+    /* Cursor del raton, si lo pones en none, el cursor no aparecera cuando se pose encima del boton */
+    cursor: pointer;
+    /* Cambio de color al sobrevolar el boton */
+    transition: background-color 0.2s ease;
+}
+
+/* Color del boton al pasar el raton por encima */
+.playPauseButton:hover,
+.stopButton:hover 
+{
+    background-color: #3071a9;
+}
+
+/* Color del boton play mientas se reproduce */
+.playPauseButton.playing 
+{
+    background-color: #d9534f;
+}
+
+/* Color del boton de pausa mientas se reproduce */
+.playPauseButton.playing:hover 
+{
+background-color: #c9302c;
+}
+
+/* Barra de progreso */
+.progressBar 
+{
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+}
+
+/* Tiempo transcurrido */
+.currentTime 
+{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Permite ajustar la anchura y altura, margen y relleno */
+    display: inline-block;
+}
+
+/* Barra de ajuste del volumen*/
+.volumeSlider {
+    width: 100%;
+
+    /* Atajo para configurar el margen alto y bajo, izquierdo y derecho a la vez
+       margin-top: 0;
+       margin-right: 10px;
+       margin-bottom: 0;
+       margin-left: 10px;
+    */
+
+    margin: 0 10px;
+}
+
+
+/* Titulo de los audios a seleccionar*/
+h2
+{
+    font-size: 24px;
+    margin-bottom: -5px;
+}
+
+/* Botones de debajo del titulo de los audios*/
+a 
+{
+    background-color: #428bca;
+    /* Color del texto de los botones */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+/* Color del Boton Cuando se pasa el raton por encima */
+a:hover 
+{
+    background-color: #3071a9;
+}
+
+/* Color del Boton Cuando se esta reproduciendo el audio */
+a.playing 
+{
+    background-color: #d9534f;
+}
+
+/* Color del Boton Cuando se esta reproduciendo el audio y se pasa el raton por encima*/
+a.playing:hover 
+{
+    background-color: #c9302c;
+}
+
+
 
