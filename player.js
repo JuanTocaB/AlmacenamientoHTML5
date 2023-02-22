@@ -84,9 +84,12 @@ window.addEventListener("load", () => {
   });
 
   // When the user changes the progress bar, change the podcast current time
-  podcastPlayerProgressBar.addEventListener("input", () => {
-    podcastPlayer.currentTime = podcastPlayerProgressBar.value;
-  });
+  podcastPlayerProgressBar.onclick = function(e) {
+    // e = Mouse click event.
+    var rect = e.target.getBoundingClientRect();
+    var x = e.clientX - rect.left; // x position within the element.
+    podcastPlayer.currentTime = (x / podcastPlayerProgressBar.offsetWidth) * podcastPlayer.duration;
+  }
 
   // When the user clicks the close button, close the podcast player
   podcastPlayerDOM
