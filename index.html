@@ -21,46 +21,47 @@ and open the template in the editor.
                     <div class="description"></div>
                 </div>
                 <div id="player">
-                   <div>
-                       <button class="playPauseButton">Play</button>
-                       <button class="closeButton">Stop</button>
-                   </div>
-                   <div>
-                       <progress class="progressBar" value="0" max="1"></progress>
-                   </div>
-                   <div>
-                       <span class="currentTime">00:00</span>
-                   </div>
-                   <div>
-                       <label>Volume</label>
-                       <input class="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
-                   </div>
-                   <div>
-                    <label for="playbackSpeed">Playback speed:</label>
-                    <select name="playbackSpeed" class="playbackSpeed">
-                      <option value="0.5">0.5x</option>
-                      <option value="0.75">0.75x</option>
-                      <option value="1">1x</option>
-                      <option value="1.25">1.25x</option>
-                      <option value="1.5">1.5x</option>
-                      <option value="2">2x</option>
-                    </select>
-                   </div>
+                    <div>
+                        <progress class="progressBar" value="0" max="1"></progress>
+                    </div>
+                    <div>
+                        <span class="currentTime">00:00</span>
+                    </div>
+                    <div>
+                        <button class="playPauseButton">Play</button>
+                        <button class="stopButton">Stop</button>
+                    </div>
+
+                    <div>
+                        <label>Volume</label>
+                        <input class="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
+                    </div>
+                    <div>
+                        <label for="playbackSpeed">Playback speed:</label>
+                        <select name="playbackSpeed" class="playbackSpeed">
+                            <option value="0.5">0.5x</option>
+                            <option value="0.75">0.75x</option>
+                            <option value="1">1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </section>
         <div>
             <!-- Demo podcast -->
             <div>
-                <h2>Podcast 1</h2>
+                <h2>Moonlight</h2>
                 <p>
-                    <a href="#" onclick="playPodcast('Podcast 1', 'Description', 'audio/moonlight.mp3');">Play</a>
-                </p>
+                    <a href="#" onclick="playPodcast('Moonlight', 'Moonlight, compuesta por: Beethoven.', 'audio/moonlight.mp3');">Play</a>
+
             </div>
             <div>
-                <h2>Podcast 2</h2>
+                <h2>Sho-Hai</h2>
                 <p>
-                    <a href="#" onclick="playPodcast('Podcast 2', 'Description', 'audio/moonlight.mp3');">Play</a>
+                    <a href="#" onclick="playPodcast('Sho-Hai', 'Entrevista hecha a Sho-Hai en 2011', 'audio/audio_Entrevista a Sho hai-lVt_hKbVZ8k.m4a');">Play</a>
                 </p>
             </div>
         </div>
