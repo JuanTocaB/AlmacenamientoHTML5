@@ -13,7 +13,7 @@ function loadAudioFiles() {
         var br = document.createElement('br');
         var a = document.createElement('a');
 
-        a.innerHTML = '<a href = "#" onclick = "playPodcast(' + audios[i].nombre.toString() + ',' + audios[i].Descripción.toString() + ','+ audios[i].path.toString()+ ')">Play</a>'
+        a.innerHTML = `<a href = "#" onclick ="playPodcast('${audios[i].nombre}', '${audios[i].Descripción}', '${audios[i].path}')">Play</a>`
 
         h2.innerHTML = audios[i].nombre;
 
@@ -22,8 +22,6 @@ function loadAudioFiles() {
         div.appendChild(a);
 
         audioDiv.appendChild(div);
-
-
     }    
 
 }
