@@ -49,6 +49,7 @@ body
 /* Botones de Play, Pausa (Son el mismo) y Stop */
 
 .playPauseButton,
+.loadAudios,
 .stopButton {
     background-color: #428bca;
     color: #fff;
@@ -68,6 +69,7 @@ body
 
 /* Color del boton al pasar el raton por encima */
 .playPauseButton:hover,
+.loadAudios:hover,
 .stopButton:hover 
 {
     background-color: #3071a9;

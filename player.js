@@ -93,7 +93,7 @@ window.addEventListener("load", () => {
 
   // When the user clicks the close button, close the podcast player
   podcastPlayerDOM
-    .querySelector(".closeButton")
+    .querySelector(".stopButton")
     .addEventListener("click", () => {
       podcastPlayerDOM.classList.remove("show");
       podcastPlayer.stop();

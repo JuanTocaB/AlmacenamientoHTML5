@@ -10,15 +10,16 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script src="PodcastPlayer.js"></script>
-        <script src="player.js"></script>
+        <script src="./audioLodaer.js" type="module"></script>
+        <script src="./PodcastPlayer.js"></script>
+        <script src="./player.js"></script>
     </head>
     <body>
         <section id="podcastPlayer">
             <div class="container">
                 <div class="header">
                     <div class="title"></div>
-                    <div class="description"></div>
+                   <div class="description"></div>
                 </div>
                 <div id="player">
                     <div>
@@ -33,6 +34,7 @@ and open the template in the editor.
                     </div>
 
                     <div>
+                        <p></p>
                         <label>Volume</label>
                         <input class="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
                     </div>
@@ -47,23 +49,12 @@ and open the template in the editor.
                             <option value="2">2x</option>
                         </select>
                     </div>
+                    <br>
+                    <button class="loadAudios" id="audios" >Load Files</button>
+                    <div id="audioList">
+                    </div>
                 </div>
             </div>
         </section>
-        <div>
-            <!-- Demo podcast -->
-            <div>
-                <h2>Moonlight</h2>
-                <p>
-                    <a href="#" onclick="playPodcast('Moonlight', 'Moonlight, compuesta por: Beethoven.', 'audio/moonlight.mp3');">Play</a>
-
-            </div>
-            <div>
-                <h2>Sho-Hai</h2>
-                <p>
-                    <a href="#" onclick="playPodcast('Sho-Hai', 'Entrevista hecha a Sho-Hai en 2011', 'audio/audio_Entrevista a Sho hai-lVt_hKbVZ8k.m4a');">Play</a>
-                </p>
-            </div>
-        </div>
     </body>
 </html>

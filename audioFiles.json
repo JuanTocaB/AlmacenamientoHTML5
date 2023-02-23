@@ -1,0 +1,31 @@
+{
+
+    "audios": [
+
+        {
+            "nombre": "Moonlight",
+            "Descripción": "Moonlight, compuesta por: Beethoven.",
+            "path": "audio/moonlight.mp3"
+        },
+
+        {
+            "nombre": "Sho-Hai",
+            "Descripción": "Entrevista hecha a Sho-Hai en 2011",
+            "path": "audio/Entrevista_a_Sho_hai-lVt_hKbVZ8k.m4a"
+        },
+
+        {
+            "nombre": "Analizando la IA",
+            "Descripción": "Podcast tratando el incipiente tema de las IA",
+            "path": "audio/Analizando_la_IA_en_2022 .m4a"
+        },
+
+        {
+            "nombre": "Historia de España",
+            "Descripción": "Podcast tratando los acontecimientos de España",
+            "path": "audio/La_ContraHistoria_de_España.mp4"
+        }
+
+    ]
+
+}
