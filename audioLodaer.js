@@ -1,13 +1,15 @@
 import audioFiles from './audioFiles.json' assert {type: 'json'};
 
+var btn = document.getElementById('audios');
+btn.addEventListener('click', loadAudioFiles);
+
+
 
 function loadAudioFiles() {
     var audios = audioFiles.audios;
     var audioDiv = document.getElementById('audioList');
 
     for (var i = 0; audios[i] != null; i++) {
-        console.log(audioFiles)
-
         var div = document.createElement('div');
         var h2 = document.createElement('h2');
         var br = document.createElement('br');
@@ -22,10 +24,9 @@ function loadAudioFiles() {
         div.appendChild(a);
 
         audioDiv.appendChild(div);
+        
+        btn.remove();
     }    
 
 }
-
-const btn = document.getElementById('audios');
-btn.addEventListener('click', loadAudioFiles);
 
