@@ -6,6 +6,63 @@ body
     margin: 0;
     font-family: Arial, sans-serif;
 }
+.footer{
+    overflow: hidden;
+    background-color: #333;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+.activeF {
+    background-color: #333;
+    
+}
+.activeF:hover {
+    background-color: #333;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    padding-bottom: 12px;
+}
+  
+#home {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#git {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #428bca;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0.5%;
+}
 
 /* Los puntos para las clases*/
 /* Caja que contiene el reproductor */
